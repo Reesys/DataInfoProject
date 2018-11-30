@@ -54,6 +54,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration" identifier="dataIdentifier"/>
+                                <connections>
+                                    <outlet property="bucketItemSignature" destination="MaE-fT-cWz" id="7bE-2d-hBO"/>
+                                    <outlet property="bucketItemSymbol" destination="K7J-UO-ley" id="YQv-32-MKB"/>
+                                    <outlet property="bucketItemText" destination="K7J-UO-ley" id="4xi-4d-1Wd"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
