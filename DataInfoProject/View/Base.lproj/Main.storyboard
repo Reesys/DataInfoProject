@@ -17,23 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="fa9-Kh-cKb" customClass="BucketItemCell" customModule="DataInfoProject" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataIdentifier" rowHeight="101" id="fa9-Kh-cKb" customClass="BucketItemCell" customModule="DataInfoProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fa9-Kh-cKb" id="L8P-ln-fGm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="bucket item here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-UO-ley" userLabel="Bucket Item Text">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bucket item here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-UO-ley" userLabel="Bucket Item Text">
                                             <rect key="frame" x="95" y="9" width="153" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="HGd-21-O9A"/>
+                                                <constraint firstAttribute="width" constant="153" id="XyM-qa-aP1"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaE-fT-cWz" userLabel="Bucket Item Author">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaE-fT-cWz" userLabel="Bucket Item Author">
                                             <rect key="frame" x="179" y="59" width="69" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="69" id="vOu-4H-lau"/>
+                                            </constraints>
                                             <attributedString key="attributedText">
                                                 <fragment content="Author">
                                                     <attributes>
@@ -44,19 +49,30 @@
                                             </attributedString>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvK-xg-gj6" userLabel="Bucket Item Symbol">
-                                            <rect key="frame" x="16" y="31" width="44" height="38"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvK-xg-gj6" userLabel="Bucket Item Symbol">
+                                            <rect key="frame" x="16" y="31.5" width="44" height="37.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="3At-d7-106"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="K7J-UO-ley" firstAttribute="top" secondItem="L8P-ln-fGm" secondAttribute="topMargin" constant="-2" id="P3y-uG-Atu"/>
+                                        <constraint firstItem="MaE-fT-cWz" firstAttribute="top" secondItem="K7J-UO-ley" secondAttribute="bottom" constant="26" id="USL-3o-J8B"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MaE-fT-cWz" secondAttribute="bottom" constant="7" id="YVh-Ub-ZxC"/>
+                                        <constraint firstItem="K7J-UO-ley" firstAttribute="trailing" secondItem="MaE-fT-cWz" secondAttribute="trailing" id="fOr-TS-th8"/>
+                                        <constraint firstItem="K7J-UO-ley" firstAttribute="leading" secondItem="L8P-ln-fGm" secondAttribute="leadingMargin" constant="79" id="gpi-SJ-Gnw"/>
+                                        <constraint firstItem="uvK-xg-gj6" firstAttribute="leading" secondItem="L8P-ln-fGm" secondAttribute="leadingMargin" id="t6U-ru-aRy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="uvK-xg-gj6" secondAttribute="bottom" constant="21" id="vtr-wq-Z62"/>
+                                        <constraint firstItem="uvK-xg-gj6" firstAttribute="centerY" secondItem="L8P-ln-fGm" secondAttribute="centerY" id="y6L-mW-37R"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <accessibility key="accessibilityConfiguration" identifier="dataIdentifier"/>
                                 <connections>
                                     <outlet property="bucketItemSignature" destination="MaE-fT-cWz" id="7bE-2d-hBO"/>
-                                    <outlet property="bucketItemSymbol" destination="K7J-UO-ley" id="YQv-32-MKB"/>
+                                    <outlet property="bucketItemSymbol" destination="uvK-xg-gj6" id="oIR-AR-QYJ"/>
                                     <outlet property="bucketItemText" destination="K7J-UO-ley" id="4xi-4d-1Wd"/>
                                 </connections>
                             </tableViewCell>

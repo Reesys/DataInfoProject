@@ -10,7 +10,6 @@
 		CD319E1D21B1BBAD008589AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E1C21B1BBAD008589AB /* AppDelegate.swift */; };
 		CD319E2221B1BBAD008589AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2021B1BBAD008589AB /* Main.storyboard */; };
 		CD319E2421B1BBAF008589AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2321B1BBAF008589AB /* Assets.xcassets */; };
-		CD319E2721B1BBAF008589AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */; };
 		CD319E3221B1BF58008589AB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3121B1BF58008589AB /* DataViewController.swift */; };
 		CD319E3421B1BFBA008589AB /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3321B1BFBA008589AB /* BucketItemCell.swift */; };
 		CD319E3721B1BFED008589AB /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3621B1BFED008589AB /* BucketItem.swift */; };
@@ -22,7 +21,6 @@
 		CD319E1C21B1BBAD008589AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD319E2121B1BBAD008589AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD319E2321B1BBAF008589AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CD319E2621B1BBAF008589AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD319E2821B1BBAF008589AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD319E3121B1BF58008589AB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		CD319E3321B1BFBA008589AB /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				CD319E2021B1BBAD008589AB /* Main.storyboard */,
-				CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,7 +160,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD319E2721B1BBAF008589AB /* LaunchScreen.storyboard in Resources */,
 				CD319E3921B1C042008589AB /* bucket18.csv in Resources */,
 				CD319E2421B1BBAF008589AB /* Assets.xcassets in Resources */,
 				CD319E2221B1BBAD008589AB /* Main.storyboard in Resources */,
@@ -193,14 +189,6 @@
 				CD319E2121B1BBAD008589AB /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CD319E2621B1BBAF008589AB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
