@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		CD319E1D21B1BBAD008589AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E1C21B1BBAD008589AB /* AppDelegate.swift */; };
-		CD319E1F21B1BBAD008589AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E1E21B1BBAD008589AB /* ViewController.swift */; };
 		CD319E2221B1BBAD008589AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2021B1BBAD008589AB /* Main.storyboard */; };
 		CD319E2421B1BBAF008589AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2321B1BBAF008589AB /* Assets.xcassets */; };
 		CD319E2721B1BBAF008589AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */; };
+		CD319E3221B1BF58008589AB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3121B1BF58008589AB /* DataViewController.swift */; };
+		CD319E3421B1BFBA008589AB /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3321B1BFBA008589AB /* BucketItemCell.swift */; };
+		CD319E3721B1BFED008589AB /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD319E3621B1BFED008589AB /* BucketItem.swift */; };
+		CD319E3921B1C042008589AB /* bucket18.csv in Resources */ = {isa = PBXBuildFile; fileRef = CD319E3821B1C042008589AB /* bucket18.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CD319E1921B1BBAD008589AB /* DataInfoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataInfoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD319E1C21B1BBAD008589AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD319E1E21B1BBAD008589AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD319E2121B1BBAD008589AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD319E2321B1BBAF008589AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD319E2621B1BBAF008589AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD319E2821B1BBAF008589AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD319E3121B1BF58008589AB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		CD319E3321B1BFBA008589AB /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		CD319E3621B1BFED008589AB /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		CD319E3821B1C042008589AB /* bucket18.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket18.csv; path = ../../../../../Downloads/bucket18.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		CD319E1B21B1BBAD008589AB /* DataInfoProject */ = {
 			isa = PBXGroup;
 			children = (
-				CD319E1C21B1BBAD008589AB /* AppDelegate.swift */,
-				CD319E1E21B1BBAD008589AB /* ViewController.swift */,
-				CD319E2021B1BBAD008589AB /* Main.storyboard */,
-				CD319E2321B1BBAF008589AB /* Assets.xcassets */,
-				CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */,
-				CD319E2821B1BBAF008589AB /* Info.plist */,
+				CD319E3521B1BFCA008589AB /* Model */,
+				CD319E2E21B1BD6C008589AB /* Resources */,
+				CD319E2F21B1BDB4008589AB /* Controller */,
+				CD319E3021B1BDBF008589AB /* View */,
 			);
 			path = DataInfoProject;
+			sourceTree = "<group>";
+		};
+		CD319E2E21B1BD6C008589AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD319E3821B1C042008589AB /* bucket18.csv */,
+				CD319E1C21B1BBAD008589AB /* AppDelegate.swift */,
+				CD319E2321B1BBAF008589AB /* Assets.xcassets */,
+				CD319E2821B1BBAF008589AB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD319E2F21B1BDB4008589AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD319E3121B1BF58008589AB /* DataViewController.swift */,
+				CD319E3321B1BFBA008589AB /* BucketItemCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CD319E3021B1BDBF008589AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD319E2021B1BBAD008589AB /* Main.storyboard */,
+				CD319E2521B1BBAF008589AB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD319E3521B1BFCA008589AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CD319E3621B1BFED008589AB /* BucketItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD319E2721B1BBAF008589AB /* LaunchScreen.storyboard in Resources */,
+				CD319E3921B1C042008589AB /* bucket18.csv in Resources */,
 				CD319E2421B1BBAF008589AB /* Assets.xcassets in Resources */,
 				CD319E2221B1BBAD008589AB /* Main.storyboard in Resources */,
 			);
@@ -135,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD319E1F21B1BBAD008589AB /* ViewController.swift in Sources */,
+				CD319E3721B1BFED008589AB /* BucketItem.swift in Sources */,
+				CD319E3421B1BFBA008589AB /* BucketItemCell.swift in Sources */,
+				CD319E3221B1BF58008589AB /* DataViewController.swift in Sources */,
 				CD319E1D21B1BBAD008589AB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataInfoProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataInfoProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DataInfoProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DataInfoProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
